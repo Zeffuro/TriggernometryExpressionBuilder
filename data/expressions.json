@@ -1,0 +1,37 @@
+[
+	{
+		"id": 0,
+		"name": "if",
+		"description": "if(x,y,z) = returns y if x is non-zero, z if x is zero (for example, if (2>3,4,5) would return 5",
+		"template": "if($x,$y,$z)",
+		"input": {
+			"x": {
+				"name": "Evaluation",
+				"description": "If this field evaluates 0 the value of z is returned, otherwise the value of y is returned.",
+				"type": "text"
+			},
+			"y": {
+				"name": "True",
+				"description": "This value is returned if x evaluates to anything other then 0.",
+				"type": "text"
+			},
+			"z":{
+				"name": "False",
+				"description": "This value is returned if x evaluates 0.",
+				"type": "text"
+			}
+		}
+	},
+	{
+		"id": 1,
+		"name": "or",
+		"description": "or(...) = returns 1 if any of the specified numbers is other than zero, 0 if not",
+		"template": "or($x,$y)"
+	},
+	{
+		"id": 2,
+		"name": "and",
+		"description": "and(...) = returns 1 if all of the specified numbers are other than zero, 0 if not",
+		"template": "and($x,$y)"
+	}
+]
